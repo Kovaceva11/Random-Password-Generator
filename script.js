@@ -1,4 +1,3 @@
-const characterAmountRange = document.getElementById('characterAmountRange')
 const characterAmountNumber = document.getElementById('characterAmountNumber')
 const includeUppercaseElement = document.getElementById('includeUppercase')
 const includeNumbersElement = document.getElementById('includeNumbers')
@@ -18,7 +17,6 @@ const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
 )
 
 characterAmountNumber.addEventListener('input', syncCharacterAmount)
-characterAmountRange.addEventListener('input', syncCharacterAmount)
 
 form.addEventListener('submit', e => {
   e.preventDefault()
@@ -55,5 +53,4 @@ function arrayFromLowToHigh(low, high) {
 function syncCharacterAmount(e) {
   const value = e.target.value
   characterAmountNumber.value = value
-  characterAmountRange.value = value
 }
