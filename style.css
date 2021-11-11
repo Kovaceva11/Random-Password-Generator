@@ -146,6 +146,11 @@ label {
   width: 3rem;
 }
 
+.pw-length-requirement {
+  font-size: x-small;
+  font-style: italic;
+  text-align: center;
+}
 
 /* Password Display Box */
 .password-display {
