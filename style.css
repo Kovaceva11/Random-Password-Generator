@@ -4,17 +4,22 @@
   box-sizing: border-box;
 }
 
-html,
-body,
 .wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 
 .wrapper {
@@ -97,7 +102,7 @@ button[disabled] {
   float: right;
 }
 
-#password {
+.password {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
