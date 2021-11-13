@@ -11,7 +11,7 @@ const passwordDisplay = document.getElementById('passwordDisplay')
 const UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90)
 const LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122)
 const NUMBER_CHAR_CODES = arrayFromLowToHigh(48, 57)
-// This concat new arrays to select the different ASCII character code ranges of the special characters 
+// This concatenates new arrays to select the different ASCII character code ranges of the special characters 
 const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
   arrayFromLowToHigh(58, 64)
 ).concat(

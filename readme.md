@@ -1,92 +1,20 @@
-# 03 JavaScript: Password Generator
+# Password-Generator
 
-## Your Task
+As and employee with access to sensitive data I needed to randomly generate a password that meets the following criteria. 
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+- must be between 8 - 128 characters in length.
+- must be able to choose including any of the following characters: Special Characters, Numbers, lower cased and upper cased letters.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+## How it works
+>This application works using Javascript to define a set of arrays (i.e. special characters, numbers, lowercase, uppercase.). These arrays are then called upon in different functions and conditional statements that prompt the user to select the option of including certain type of characters in the password. 
 
-## User Story
+>The application sets the selected password Options as an object. Then the GeneratePassword function calls upon that object's properties to get random indices from the initial arrays.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+If a password option is NOT selected in the checkbox, then the character type will NOT be included in the password result. 
 
-## Acceptance Criteria
+## Credits
+MDN Web Docs [https://developer.mozilla.org/en-US/](Developer.Mozilla.Org)
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+Georgia Tech Full-Stack Bootcamp
 
-## Mock-Up
-
-The following image shows the web application's appearance and functionality:
-
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+WebDevSimplified - Youtube Tutorial Video [https://www.youtube.com/watch?v=iKo9pDKKHnc&t=1082s](www.youtube.com)
